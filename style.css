@@ -4,24 +4,24 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.decision-making-matrix {
+.matrix {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
-.decision-making-matrix img {
+.matrix img {
   width: 100%;
 }
-.decision-making-matrix .more-inf {
+.matrix .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .decision-making-matrix { text-align: center;
+  .matrix { text-align: center;
   }
 }
-.main-window-for-tasks {
+.all-tasks {
   display: block;
   width: 500px;
   margin: 0 auto 0;
