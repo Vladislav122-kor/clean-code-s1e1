@@ -1,0 +1,165 @@
+.page {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+
+.matrix {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+
+.matrix__img {
+  width: 100%;
+}
+
+.matrix__more-inf {
+  font-family: fantasy, cursive;
+}
+
+@media (max-width: 768px) {
+
+  .matrix { 
+    text-align: center;
+  }
+
+}
+
+.tasks {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.task {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.task-adding-area {
+  display: flex;
+}
+
+#incomplete-tasks,
+#completed-tasks {
+  margin: 0;
+  padding: 0px;
+}
+
+.tasks-list, 
+.title {
+  list-style: none;
+}
+
+.input,
+.button {
+  outline: none;
+}
+
+.button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #3a3A3a;
+}
+
+/* Heading */
+.title {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#new-task,
+.tasks-list__input {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+
+#new-task:focus,
+.tasks-list__input:focus {
+  color: #333;
+}
+
+/* New Task */
+.title_margin {
+  margin: 0 0 20px;
+}
+
+.task-adding-area__input {
+  width: 318px;
+}
+
+/* Task list */
+.tasks-list {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks-list__checkbox {
+  margin: 0 10px;
+}
+
+.tasks-list__label {
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
+}
+
+.tasks-list__input {
+  width: 226px;
+  display: none;
+}
+
+.img_removal {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.img_removal:hover {
+  transform: rotateZ(0);
+}
+
+/* Completed */
+#completed-tasks .tasks-list__label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.edit-mode .tasks-list__input {
+  display: inline-block;
+  width: 224px;
+}
+
+.edit-mode .tasks-list__label {
+  display: none;
+}
